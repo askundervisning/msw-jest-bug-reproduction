@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+
+    // "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+
+    "strict": true,
+    // "noUncheckedIndexedAccess": true,
+
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "noEmit": true,
+
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    // OLD
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@common/*": ["../../common/js/*"]
+    },
+    "types": ["vite/client"]
+  },
+  "include": ["src", "../common/js/"],
+  "exclude": [
+    "node_modules",
+    "assets",
+    "dist",
+    ".cache",
+    "coverage",
+    "icon-set",
+    "scss",
+    "css-implementation"
+  ]
+}
